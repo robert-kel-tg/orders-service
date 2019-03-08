@@ -1,0 +1,17 @@
+---
+version: '3.7'
+services:
+
+  api:
+    build:
+      context: .
+      dockerfile: ./docker/dev/Dockerfile
+    ports: 
+      - "8080:8080"
+    volumes:
+      - ./:/go/src/github.com/robertke/orders-service
+    environment:
+        SERVICE_NAME: 'orders-service'
+        PORT: '8080'
+        DATABASE_DSN: 'db://name/table'
+    command: "CompileDaemon -build='make install' -command=api"
