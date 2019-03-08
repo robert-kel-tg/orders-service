@@ -20,10 +20,10 @@ func (c *orderCreateCmd) GetID() string {
 
 // GetName ...
 func (c *orderCreateCmd) GetName() string {
-	return c.ID
+	return c.Name
 }
 
 // GetDesc ...
 func (c *orderCreateCmd) GetDesc() string {
-	return c.ID
+	return c.Description
 }
