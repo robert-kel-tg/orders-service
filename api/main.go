@@ -13,7 +13,7 @@ import (
 	"github.com/robertke/orders-service/pkg/application/handler"
 	"github.com/robertke/orders-service/pkg/application/response"
 	"github.com/robertke/orders-service/pkg/domain"
-	"github.com/robertke/orders-service/pkg/repository"
+	"github.com/robertke/orders-service/pkg/infrastructure/repository"
 
 	log "github.com/sirupsen/logrus"
 )
